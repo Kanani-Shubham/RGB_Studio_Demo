@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Productions - One of the Best Production House</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://rgbdubai.com/rgbart/show.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .project-item {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .project-overlay {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            transition: all 0.3s ease;
+        }
+        
+        .project-item:hover .project-overlay {
+            bottom: 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-black text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-red-500 font-bold text-2xl mr-2">RGB</span>
+                <span class="font-bold text-xl">Productions</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-red-500 transition">Home</a>
+                <a href="#services" class="hover:text-red-500 transition">Services</a>
+                <a href="#projects" class="hover:text-red-500 transition">Projects</a>
+                <a href="#clients" class="hover:text-red-500 transition">Clients</a>
+                <a href="#testimonials" class="hover:text-red-500 transition">Testimonials</a>
+                <a href="#contact" class="hover:text-red-500 transition">Contact</a>
+            </div>
+            <button class="md:hidden text-white focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section h-screen flex items-center justify-center text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="hero-text text-5xl md:text-6xl font-bold mb-6">One of the Best Production House</h1>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Bringing creative visions to life with uncompromised quality in video production and animation services.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#services" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-medium transition">Our Services</a>
+                <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-black text-white px-6 py-3 rounded-full font-medium transition">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-2">SHOWREEL</h2>
+            <div class="w-20 h-1 bg-red-600 mx-auto mb-12"></div>
+            <div class="aspect-w-16 aspect-h-9 max-w-4xl mx-auto bg-gray-800 rounded-lg overflow-hidden shadow-xl">
+                <iframe class="w-full h-96" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://rgbdubai.com/rgbart/vision.jpg" alt="Our Vision" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">Our Vision</h2>
+                    <div class="w-20 h-1 bg-red-600 mb-6"></div>
+                    <p class="text-gray-700 text-lg mb-6">We aim to recreate our clients visions to perfection by providing uncompromised high quality video production, post production and animation services.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <i class="fas fa-lightbulb text-red-600 text-2xl mb-2"></i>
+                            <h3 class="font-bold">Innovation</h3>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <i class="fas fa-medal text-red-600 text-2xl mb-2"></i>
+                            <h3 class="font-bold">Quality</h3>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <i class="fas fa-hands-helping text-red-600 text-2xl mb-2"></i>
+                            <h3 class="font-bold">Collaboration</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pl-8">
+                    <img src="https://rgbdubai.com/rgbart/rgb/app.jpg" alt="Our Approach" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">Our Approach</h2>
+                    <div class="w-20 h-1 bg-red-600 mb-6"></div>
+                    <p class="text-gray-700 text-4xl font-bold mb-6">Always hands on.</p>
+                    <p class="text-gray-600 mb-6">We believe in getting our hands dirty to ensure every project meets our high standards. Our team is involved in every step of the process, from concept to final delivery.</p>
+                    <a href="#contact" class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-full font-medium transition">Work With Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://rgbdubai.com/rgbart/rgb/profile.jpg" alt="Our Profile" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-4">Our Profile</h2>
+                    <div class="w-20 h-1 bg-red-600 mb-6"></div>
+                    <p class="text-gray-700 mb-6">With years of experience in the industry, RGB Productions has established itself as a leader in video production and post-production services. Our team of creative professionals is dedicated to delivering exceptional results for every client.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h3 class="font-bold text-red-600 mb-2">20+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h3 class="font-bold text-red-600 mb-2">500+</h3>
+                            <p>Projects Completed</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h3 class="font-bold text-red-600 mb-2">100+</h3>
+                            <p>Satisfied Clients</p>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <h3 class="font-bold text-red-600 mb-2">50+</h3>
+                            <p>Awards Won</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Service</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">What we can offer to you that will help you in achieving your goals.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                    <img src="https://rgbdubai.com/rgbart/rgb/tv.jpeg" alt="TV Commercials" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">TV Commercials</h3>
+                        <p class="text-gray-400 mb-4">A commercial advertisement on television is a span of television programming produced and paid for by an organization, which conveys a message, typically to market a product or service.</p>
+                        <a href="#modalservice" class="text-red-500 font-medium hover:text-red-400 transition">Know More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                    <img src="https://rgbdubai.com/rgbart/rgb/corporate.jpg" alt="Corporate Films" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Corporate Films</h3>
+                        <p class="text-gray-400 mb-4">Corporate video production refers to audio-visual corporate communications material commissioned primarily for use by a company, corporation or organisation.</p>
+                        <a href="#modalservice" class="text-red-500 font-medium hover:text-red-400 transition">Know More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                    <img src="https://rgbdubai.com/rgbart/rgb/animation.jpg" alt="2D & 3D Animations" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">2D & 3D Animations</h3>
+                        <p class="text-gray-400 mb-4">Animation is the process of creating motion and shape change illusion by means of the rapid display of a sequence of static images that minimally differ from each other.</p>
+                        <a href="#modalservice" class="text-red-500 font-medium hover:text-red-400 transition">Know More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                    <img src="https://rgbdubai.com/rgbart/rgb/post.jpg" alt="Post Production Facility" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Post Production Facility</h3>
+                        <p class="text-gray-400 mb-4">Post-production is part of filmmaking, video production and photography process. It occurs in the making of motion pictures, television programs, radio programs, advertising, audio recordings, photography, and digital art.</p>
+                        <a href="https://rgbdubai.com/rgbart/productionmodal" class="text-red-500 font-medium hover:text-red-400 transition">Know More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                    <img src="https://rgbdubai.com/rgbart/pic/studio4.jpg" alt="Studio Facility" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Studio Facility</h3>
+                        <p class="text-gray-400 mb-4">A film studio (also known as movie studio or simply studio) is a facilities that are used to make own films or hire for other production houses, TV channels, independent producers etc.</p>
+                        <div class="flex space-x-3">
+                            <a href="https://rgbdubai.com/rgbart/studiomodal" class="text-red-500 font-medium hover:text-red-400 transition">Know More <i class="fas fa-arrow-right ml-1"></i></a>
+                            <a href="https://rgbdubai.com/rgbart/pic/profile.pdf" class="text-blue-400 font-medium hover:text-blue-300 transition">Studio Profile <i class="fas fa-download ml-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-gray-800 rounded-lg overflow-hidden transition duration-300">
+                    <img src="https://rgbdubai.com/rgbart/rgb/event.jpg" alt="Event Coverage" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Event Coverage</h3>
+                        <p class="text-gray-400 mb-4">Our special event coverage team covers events held anywhere in the UAE includes ENG cameras and OB van camera setup.</p>
+                        <a href="#modalservice" class="text-red-500 font-medium hover:text-red-400 transition">Know More <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section class="py-16 bg-gray-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 7 -->
+                <div class="bg-gray-700 rounded-lg p-6 flex items-start">
+                    <div class="bg-red-600 p-3 rounded-full mr-4">
+                        <i class="fas fa-compact-disc text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">DUPLICATION & PACKAGING</h3>
+                        <p class="text-gray-300">DCP, DVD replication, Short-run and CD replication, Business Card CD-Replication, HD, Digital Betacam, DVcam, Betacam SP/SX, MPEG IMX etc.</p>
+                    </div>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="bg-gray-700 rounded-lg p-6 flex items-start">
+                    <div class="bg-red-600 p-3 rounded-full mr-4">
+                        <i class="fas fa-film text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">VTR FORMATS</h3>
+                        <p class="text-gray-300">Digital Betacam, HDV, DVcam, Betacam SX, Betacam SP, MPEG IMX.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Projects</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 font-medium">Recently Done</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Project 1 -->
+                <div class="project-item rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://rgbdubai.com/rgbart/burger.jpg" alt="Burger King New Fries Characters TVC" class="w-full h-64 object-cover">
+                    <div class="project-overlay p-4 text-white">
+                        <h3 class="font-bold text-lg">Burger King New Fries Characters TVC</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-item rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://rgbdubai.com/rgbart/new/19.png" alt="Dubai Celebration Chain DSF - TVC" class="w-full h-64 object-cover">
+                    <div class="project-overlay p-4 text-white">
+                        <h3 class="font-bold text-lg">Dubai Celebration Chain DSF - TVC</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-item rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://rgbdubai.com/rgbart/citymax.jpg" alt="Citymax TVC" class="w-full h-64 object-cover">
+                    <div class="project-overlay p-4 text-white">
+                        <h3 class="font-bold text-lg">Citymax TVC</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-item rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://rgbdubai.com/rgbart/new/3.png" alt="3M Scotch Super Glue - SNAP TVC" class="w-full h-64 object-cover">
+                    <div class="project-overlay p-4 text-white">
+                        <h3 class="font-bold text-lg">3M Scotch Super Glue - SNAP TVC</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-item rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://rgbdubai.com/rgbart/new/4.png" alt="Gillette Gold Man" class="w-full h-64 object-cover">
+                    <div class="project-overlay p-4 text-white">
+                        <h3 class="font-bold text-lg">Gillette Gold Man</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-item rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://rgbdubai.com/rgbart/new/5.png" alt="NBAD SAFEST BANK TVC" class="w-full h-64 object-cover">
+                    <div class="project-overlay p-4 text-white">
+                        <h3 class="font-bold text-lg">NBAD SAFEST BANK TVC</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 7 -->
+                <div class="project-item rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://rgbdubai.com/rgbart/new/66.png" alt="Nikon D 3200 ME" class="w-full h-64 object-cover">
+                    <div class="project-overlay p-4 text-white">
+                        <h3 class="font-bold text-lg">Nikon D 3200 ME</h3>
+                    </div>
+                </div>
+                
+                <!-- Project 8 -->
+                <div class="project-item rounded-lg overflow-hidden shadow-lg relative">
+                    <img src="https://rgbdubai.com/rgbart/new/77.png" alt="Al Watan TVC" class="w-full h-64 object-cover">
+                    <div class="project-overlay p-4 text-white">
+                        <h3 class="font-bold text-lg">Al Watan TVC</h3>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium px-6 py-3 rounded-full transition">Load More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Our Clients</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">We've had the privilege of working with some of the most respected brands in the industry.</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-8">
+                <img src="https://rgbdubai.com/rgbart/client.png" alt="Our Clients" class="w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Testimonials</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">What our clients say about our work and services.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-800 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center text-white font-bold text-xl mr-4">M</div>
+                        <div>
+                            <h3 class="font-bold">Mohammed Arish</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"We approached RGB Productions for campaign design & marketing strategy and all we needed to do was just tell them about our products & its offering and then did all the math of campaign design & strategy without even requiring a pinch of our time in that process, I should mention that it was indeed a successful one"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-800 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center text-white font-bold text-xl mr-4">K</div>
+                        <div>
+                            <h3 class="font-bold">Karan Singh</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"RGB Production's ability to use customer and market insight to develop tangible plans that drive commercial growth is exemplary. The expertise and experience within the team is clear and instilled confidence in me that projects would be delivered to the highest standard- confidence that the results showed was certainly not misplaced."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-800 rounded-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center text-white font-bold text-xl mr-4">D</div>
+                        <div>
+                            <h3 class="font-bold">Devashree Mathur</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">"RGB Productions are always enjoyable to work with, very flexible in their approach and commitment and consistently meet deadlines with excellent work which almost always exceeds the objectives."</p>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <img src="https://rgbdubai.com/rgbart/images/testimonials_bg.png" alt="Testimonials Background" class="w-full h-auto rounded-lg">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-2">Contact Us</h2>
+                <div class="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+                <p class="max-w-2xl mx-auto">Get in touch with our team for your next project or inquiry.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Office Address -->
+                <div class="bg-gray-100 rounded-lg p-6 text-center">
+                    <div class="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4">Office Address</h3>
+                    <img src="https://rgbdubai.com/rgbart/rgb/office.jpg" alt="Office Address" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700">RGB Productions, Dubai Media City, Dubai, UAE</p>
+                </div>
+                
+                <!-- Phone & Fax -->
+                <div class="bg-gray-100 rounded-lg p-6 text-center">
+                    <div class="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4">Phone & Fax</h3>
+                    <img src="https://rgbdubai.com/rgbart/images/contact_bg02.png" alt="Phone & Fax" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700 mb-2"><strong>Phone:</strong> +971 4 123 4567</p>
+                    <p class="text-gray-700"><strong>Fax:</strong> +971 4 123 4568</p>
+                </div>
+                
+                <!-- Email Support -->
+                <div class="bg-gray-100 rounded-lg p-6 text-center">
+                    <div class="bg-red-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-4">Email Support</h3>
+                    <img src="https://rgbdubai.com/rgbart/images/contact_bg03.png" alt="Email Support" class="w-full h-auto mb-4 rounded">
+                    <p class="text-gray-700 mb-2"><strong>General:</strong> info@rgbproductions.com</p>
+                    <p class="text-gray-700"><strong>Support:</strong> support@rgbproductions.com</p>
+                </div>
+            </div>
+            
+            <!-- Google Map -->
+            <div class="mt-12 bg-gray-100 rounded-lg p-6">
+                <h3 class="font-bold text-xl mb-4 text-center">Find Us On Google Map</h3>
+                <div class="aspect-w-16 aspect-h-9 bg-gray-300 rounded-lg overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178509744292!2d55.27041531500931!3d25.19740298389344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682f8c1e1d9f%3A0x3a3a3a3a3a3a3a3a!2sDubai%20Media%20City!5e0!3m2!1sen!2sae!4v1620000000000!5m2!1sen!2sae" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="text-red-500 font-bold text-2xl mr-2">RGB</span>
+                        <span class="font-bold text-xl">Productions</span>
+                    </div>
+                    <p class="text-gray-400">One of the best production houses in Dubai, delivering high-quality video production and animation services.</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#projects" class="text-gray-400 hover:text-white transition">Projects</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">TV Commercials</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Corporate Films</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">2D & 3D Animation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Post Production</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Event Coverage</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="bg-gray-800 hover:bg-red-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-red-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-red-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 hover:bg-red-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">Subscribe to our newsletter for updates</p>
+                    <div class="mt-2 flex">
+                        <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg focus:outline-none w-full">
+                        <button class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-r-lg">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 RGB Productions. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple JavaScript for mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('.md\\:hidden');
+            const mobileMenu = document.querySelector('.md\\:flex');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+                mobileMenu.classList.toggle('flex-col');
+                mobileMenu.classList.toggle('absolute');
+                mobileMenu.classList.toggle('top-16');
+                mobileMenu.classList.toggle('left-0');
+                mobileMenu.classList.toggle('w-full');
+                mobileMenu.classList.toggle('bg-black');
+                mobileMenu.classList.toggle('p-4');
+                mobileMenu.classList.toggle('space-y-4');
+                mobileMenu.classList.toggle('space-x-0');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
